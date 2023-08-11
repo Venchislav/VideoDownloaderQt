@@ -15,6 +15,8 @@ class DT(QMainWindow):
         self.ui.pushButton.clicked.connect(self.download_video)
         self.ui.pushButton_2.clicked.connect(self.get_res)
         self.ui.pushButton_3.clicked.connect(self.get_res)
+        mixer.init()
+        mixer.music.load('melancholy-ui-chime-47804.mp3')
 
     def get_res(self):
         d = self.sender()
@@ -29,6 +31,7 @@ class DT(QMainWindow):
         except:
             self.ui.label_7.setText('ERR')
         self.ui.label_7.setText('DONE')
+        mixer.music.play()
 
 
 if __name__ == '__main__':
