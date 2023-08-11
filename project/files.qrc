@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="files">
+    <file>download-circular-button.png</file>
+    <file>youtube.png</file>
+  </qresource>
+</RCC>
